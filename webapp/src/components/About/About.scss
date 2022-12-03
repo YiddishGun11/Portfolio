@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss" ;
+
+.about-container {
+    background: rgb(40, 37, 54);
+    height: auto;
+    width: 100%;
+    font-family: $police;
+    padding: 0 10%;
+
+    & div {
+        overflow-y: hidden;
+    }
+
+    .about-title {
+        text-align: center;
+        margin-top : 40px;
+        margin-bottom : 30px;
+        animation: from-top-title 2s ;
+        animation-iteration-count: 1;
+        color: white;
+        font-weight: 600;
+
+    }
+
+    .about-body {
+        display: flex;
+        gap: 10%;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+
+        .about-body-items {
+            color: white;
+            padding: 40px 340px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & h2 {
+                font-weight: 500;
+            }
+
+            & p {
+                margin: 15px 0;
+                font-size: 20px;
+
+                .about-text {
+                    background: $gradient-color;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    font-weight: 600;
+                    background-clip: text;
+                }
+            }
+
+        }
+
+        .technologies {
+            margin-top: 80px;
+            display: flex;
+            gap: 50px;
+            flex-direction: column;
+            color: white;
+
+            & h1 {
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+
+                p {
+                    font-size: 75px;
+                    font-family: Nunito, sans-serif;
+                    padding: 0;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+.about-icons{
+    cursor: pointer;
+}
+
+
+#react:hover {
+    transform: rotate(180deg);
+    transition-duration: 3s;
+    cursor: pointer;
+}
+
+#c-programming {
+    margin-top: 4px;
+}
+
+@keyframes from-top-title {
+    from {
+        transform: translateY(-150%);
+      }
+    
+      to {
+        transform: translateY(0%);
+      }
+}

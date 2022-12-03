@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss" ;
+
+.footer-section {
+    background-color: $main-background;
+    height: auto;
+    font-family: $police;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 40px;
+
+    .footer-items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        div {
+            display: flex;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: palevioletred;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            p {
+                padding-top: 5px;
+                cursor: pointer;
+            }
+        }
+
+        div:hover {
+            color: palevioletred;
+            transition-duration: 0.5s;
+        }
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+
+        margin-top: 40px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

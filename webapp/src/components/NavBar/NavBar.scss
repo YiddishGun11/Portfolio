@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+@import '../../styles/variables.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: $police;
+    padding: 20px 80px;
+    background-color: $main-background;
+    color: white;
+    position: fixed;
+    width: 100%;
+    animation: from-top 2s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+
+    .main-title {
+        background: linear-gradient(33deg, rgba(120,39,125,1) 0%, rgba(136,52,154,1) 35%, rgba(238,110,255,1) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 600;
+        background-clip: text;
+        cursor: pointer;
+    }
+
+
+     .navbar-navigation {
+        display: flex;
+        gap: 50px;
+
+        .join-github {
+            padding-top: 12px;
+        }
+
+        .navbar-items{
+            display: flex;
+            gap: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 12px;
+            text-decoration: none;
+            cursor: pointer;
+
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                border-bottom: 3.5px solid $main-color;
+            }
+        }
+     }
+}
+
+.navbar-icons {
+    margin-top: 1.5px;
+}
+
+@keyframes from-top {
+    from {
+        transform: translateY(-100%);
+      }
+    
+      to {
+        transform: translateY(0%);
+      }
+}
