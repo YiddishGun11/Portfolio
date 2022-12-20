@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss" ;
 
 .about-container {
-    background: rgb(40, 37, 54);
+    background: $main-background;
     height: auto;
     width: 100%;
     font-family: $police;
@@ -31,7 +31,7 @@
 
         .about-body-items {
             color: white;
-            padding: 40px 340px;
+            padding: 40px 300px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -43,10 +43,12 @@
 
             & p {
                 margin: 15px 0;
-                font-size: 20px;
+                font-size: 22px;
+                font-family: $text-police;
+                line-height: 150%;
 
                 .about-text {
-                    background: $gradient-color;
+                    background: $main-color;
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
                     font-weight: 600;
@@ -78,6 +80,11 @@
                     padding: 0;
                     margin-top: 7px;
                 }
+
+                svg:hover {
+                    fill: $main-color;
+                }
+
             }
         }
     }
@@ -90,7 +97,7 @@
 
 #react:hover {
     transform: rotate(180deg);
-    transition-duration: 3s;
+    transition-duration: 2s;
     cursor: pointer;
 }
 

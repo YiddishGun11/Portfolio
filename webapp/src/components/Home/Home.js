@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.scss'
 
-import MainSvg from '../../assets/home-main.svg'
+import MainSvg from '../../assets/dev-svg.svg'
 
 function Home(){
     return(

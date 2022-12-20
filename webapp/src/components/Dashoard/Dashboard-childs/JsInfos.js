@@ -18,6 +18,7 @@ function JsInfos(){
                         <li>I consider possessing a good advanced level</li>
                         <li>Mastering basisc and advanced skills with Javascript due to my computer sciences studies oriented in web development</li>
                         <li>I can manipulate : requests, DOM, errors treatments, promises, events etc.</li>
+                        <li>Asynchrone programming</li>
                         <li>I implement all this knoledges in modern Js frameworks like React, NodeJs and VueJS</li>
                         <li>Implementing testing with Jest and Cypress</li>
                     </ul>

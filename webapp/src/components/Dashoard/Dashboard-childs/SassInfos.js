@@ -18,7 +18,7 @@ function SassInfos(){
                         <li>I use SASS to implement proper css code </li>
                         <li>I can use all concepts of SASS with variables, conditions, extends, mixins etc.</li>
                         <li>I use Keyframes and media-queries to build proper and responsive webs sites</li>
-                        <li>I master flex-box, gradients, filters and other cool css properties</li>
+                        <li>I master flex-box, gradients, grid, filters and other cool css properties</li>
                     </ul>
                 </div>
                 <div id='second-container'>

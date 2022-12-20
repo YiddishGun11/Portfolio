@@ -17,7 +17,7 @@
     overflow: hidden;
 
     .main-title {
-        background: linear-gradient(33deg, rgba(120,39,125,1) 0%, rgba(136,52,154,1) 35%, rgba(238,110,255,1) 100%);
+        background: $main-color;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         font-weight: 600;

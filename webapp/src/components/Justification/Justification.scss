@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.justification-main-section {
+    padding: 40px 150px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .justification-title {
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: $police;
+            font-size: 32px;
+        }
+    }
+
+    .justification-body {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        gap: 50px;
+
+        div {
+            text-align: center;
+            background-color: $main-color;
+            cursor: pointer;
+            font-family: $text-police;
+            padding: 15px 0;
+            border: none;
+            border-radius: 5px;
+
+            p {
+                color: white;
+                font-weight: 600;
+            }
+
+            &:hover {
+                transition-duration: 0.5s;
+                box-shadow: -4px 10px 30px -5px rgba(20,20,20,0.75);
+                -webkit-box-shadow: -4px 13px 33px -5px rgba(0,0,0,0.75);
+                -moz-box-shadow: -4px 13px 33px -5px rgba(0,0,0,0.75);
+            }
+        }
+    }
+
+}
+
+.popup-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 150px 70px;
+
+    img {
+        width: 1000px;
+        height: 450px;
+    }
+
+    button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 40px;
+        font-family: $police;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        color: white;
+        background-color: $main-color;
+    }
+}

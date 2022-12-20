@@ -15,7 +15,7 @@ function ReactInfos(){
                     <h2>Skills</h2>
                     <ul>
                         <li>I consider possessing a good advanced level</li>
-                        <li>Mastering Props, States and usage of components in several cool implementations</li>
+                        <li>Mastering Props, States, memoization and usage of components in several cool implementations</li>
                         <li>I use cool react tools like React-router, icons and other packages adding cool implementations and app optimisation</li>
                         <li>Use of Redux in medium and large apps for state managing</li>
                         <li>I can manipulate the 10 basics react hooks : useState, useEffect, useRef, useContext, useMemo, useCallback etc</li>

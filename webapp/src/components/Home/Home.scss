@@ -6,9 +6,7 @@
     width: 100vw;
     height: 100vh;
     background-color: $main-background;
-    padding: 0 10%;
-    padding-top : 170px;
-    padding-bottom: 50px;
+    padding: 150px 10% 50px;
 
     .home-section-title {
         width: 45%;
@@ -16,6 +14,48 @@
         font-size: 22px;
         font-family: $police;
         background-color: $main-background;
+        padding: 15px 0 0;
+        
+        .presentation-div {
+            display: flex;
+            flex-direction: column;
+            padding: 100px 10%;
+            font-size: $police;
+            gap: 40px;
+            overflow-x: hidden;
+
+            #home-text {
+                font-size: 35px;
+                color: $main-color;
+                font-weight: 600;
+                animation: slidein-text 2s ;
+                animation-iteration-count: 1;
+            }
+
+            .presentation-div-items {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 38px;
+                animation: slidein-text 2s ;
+                animation-iteration-count: 1;
+
+                .hi-there {
+                    display: flex;
+                    gap: 10px;
+
+                    .hi-there-span {
+                        animation: wave-animation 3s;
+                        animation-iteration-count: 1;
+                    }
+                }
+
+            }
+
+            .text-apparition {
+                overflow-x: hidden;
+            }
+        }
     }
 
     .home-section-image {
@@ -24,8 +64,8 @@
         overflow-x: hidden;
 
         img {
-            width: 550px;
-            height: 500px;
+            width: 480px;
+            height: 380px;
             margin-top: 10px;
             animation: slidein-photo 2s;
             animation-iteration-count: 1;
@@ -33,98 +73,52 @@
     }
 }
 
-.text-apparition {
-    overflow-x: hidden;
-}
-
-.presentation-div {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 10%;
-    font-size: $police;
-    gap: 60px;
-    overflow-x: hidden;
-
-    #home-text {
-        font-size: 35px;
-        background: linear-gradient(33deg, rgba(120,39,125,1) 0%, rgba(136,52,154,1) 35%, rgba(238,110,255,1) 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: 600;
-        background-clip: text;
-        animation: slidein-text 2s ;
-        animation-iteration-count: 1;
-    }
-
-    & .presentation-div-items {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-size: 38px;
-        animation: slidein-text 2s ;
-        animation-iteration-count: 1;
-
-        & .hi-there {
-            display: flex;
-            gap: 10px;
-
-            .hi-there-span {
-                animation: wave-animation 3s;
-                animation-iteration-count: 1;
-            }
-        }
-
-    }
-}
-
-
-
 @keyframes wave-animation {
     0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
     }
     10% {
-      transform: rotate(14deg);
+    transform: rotate(14deg);
     } /* The following five values can be played with to make the waving more or less extreme */
     20% {
-      transform: rotate(-8deg);
+    transform: rotate(-8deg);
     }
     30% {
-      transform: rotate(14deg);
+    transform: rotate(14deg);
     }
     40% {
-      transform: rotate(-4deg);
+    transform: rotate(-4deg);
     }
     50% {
-      transform: rotate(10deg);
+    transform: rotate(10deg);
     }
     60% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
     } /* Reset for the last half to pause */
     100% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
     }
-  }
+}
 
-  @keyframes slidein-text {
+@keyframes slidein-text {
     from {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
     }
-  
-    to {
-      transform: translateX(0%);
-    }
-  }
 
-  @keyframes slidein-photo {
-    from {
-      transform: translateX(+100%);
-    }
-  
     to {
-      transform: translateX(0%);
+    transform: translateX(0%);
     }
-  }
+}
+
+@keyframes slidein-photo {
+    from {
+    transform: translateX(+100%);
+    }
+
+    to {
+    transform: translateX(0%);
+    }
+}
 
 
 

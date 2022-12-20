@@ -6,7 +6,7 @@ import Footer from '../components/Footer/Footer'
 import About from '../components/About/About'
 import Projects from '../components/Projects/Projects'
 import Dashboard from '../components/Dashoard/Dashboard'
-
+import Justification from '../components/Justification/Justification'
 
 
 function App(){
@@ -17,6 +17,7 @@ function App(){
             <Projects />
             <About />
             <Dashboard />
+            <Justification />
             <Footer />
         </div>
     );
